@@ -1,33 +1,67 @@
-.textContainer {
-  display: flex;
-  flex-direction: column;
-  margin-left: 100px;
+.messageBox {
+  background: #f3f3f3;
+  border-radius: 20px;
+  padding: 5px 20px;
   color: white;
-  height: 60%;
-  justify-content: space-between;
+  display: inline-block;
+  max-width: 80%;
 }
 
-.activeContainer {
+.messageText {
+  width: 100%;
+  letter-spacing: 0;
+  float: left;
+  font-size: 1.1em;
+  word-wrap: break-word;
+}
+
+.messageText img {
+  vertical-align: middle;
+}
+
+.messageContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5%;
+  margin-top: 3px;
+}
+
+.sentText {
   display: flex;
   align-items: center;
-  margin-bottom: 50%;
+  font-family: Helvetica;
+  color: #828282;
+  letter-spacing: 0.3px;
 }
 
-.activeItem {
-  display: flex;
-  align-items: center;
-}
-
-.activeContainer img {
+.pl-10 {
   padding-left: 10px;
 }
 
-.textContainer h1 {
-  margin-bottom: 0px;
+.pr-10 {
+  padding-right: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
-  .textContainer {
-    display: none;
-  }
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorDark {
+  color: #353535;
+}
+
+.backgroundBlue {
+  background: #2979ff;
+}
+
+.backgroundLight {
+  background: #f3f3f3;
 }
